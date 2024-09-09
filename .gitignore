@@ -3,3 +3,4 @@
 /data
 /html_data
 /poetry.lock
+__pycache__/
