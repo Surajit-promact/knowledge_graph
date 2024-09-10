@@ -1,9 +1,9 @@
 import os
 from dotenv import load_dotenv
-from neomodel import config, db
+from neomodel import config
 from neomodel.exceptions import UniqueProperty
 
-from models import Case, Court, AppealedCase, CourtData, SummaryData, CitationsData
+from models import Case, Court, CourtData, SummaryData, CitationsData
 
 # Load environment variables
 load_dotenv()
@@ -112,4 +112,4 @@ def create_case_graph(case_info):
         summary_data.neighbouring_court.connect(court_data)
         court_data.neighbouring_summary.connect(summary_data)
 
-    print(f"Graph data for case {case_info['case_name']} created successfully.")
+    print(f"Graph data for {case_info['case_name']} created successfully.")

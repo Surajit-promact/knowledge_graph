@@ -73,7 +73,8 @@ class SummaryData(StructuredNode):
     summary = StringProperty()
 
     neighbouring_court = RelationshipTo("CourtData", "Neighbouring_data")
-    neighbouring_citations = RelationshipTo("CitationsData", "Neighbouring_data")
+    neighbouring_citations = RelationshipTo(
+        "CitationsData", "Neighbouring_data")
 
 
 # CitationsData Node

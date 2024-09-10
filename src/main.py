@@ -20,7 +20,7 @@ def load_data(file_dir_path):
 
 if __name__ == '__main__':
     # load data into graph
-    file_dir_path = 'C:\\Users\\admin\\Downloads\\Aritra-Docs\\Aritra-Docs'
+    file_dir_path = './html_data2'
     # load_data(file_dir_path)
 
     # perform Q&A using Cypher query
